@@ -1,0 +1,31 @@
+.transaction_history {
+  display: inline-block;
+  overflow: hidden;
+  align-content: center;
+  margin: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border-spacing: 0px;
+
+  background-color: white;
+  & th,
+  td {
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    margin: 0px;
+    &:not(:last-child) {
+      border-right: 1.5px solid rgba(128, 128, 128, 0.3);
+    }
+  }
+}
+
+.thead {
+  background-color: rgb(0, 147, 184);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(0, 147, 184, 0.1);
+}

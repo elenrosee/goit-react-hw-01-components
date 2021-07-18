@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Profile from './components/Profile';
-import Statistics from './components/Statistics';
-import FriendList from './components/FriendList';
-import TransactionHistory from './components/TransactionHistory';
+import Profile from './components/Profile/Profile';
+import Statistics from './components/Statistics/Statistics';
+import FriendList from './components/FriendList/FriendList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
 import user from './data-info/user.json';
 import statisticalData from './data-info/statistical-data.json';
@@ -12,7 +12,7 @@ import transactions from './data-info/transactions.json';
 
 const App = () => {
   return (
-    <div>
+    <React.Fragment>
       <Profile
         name={user.name}
         tag={user.tag}
@@ -23,7 +23,7 @@ const App = () => {
       <Statistics title="Upload stats" stats={statisticalData} />
       <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
-    </div>
+    </React.Fragment>
   );
 };
 
