@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/components/Profile/Profile.module.scss"],"names":[],"mappings":"AAAA,wBACE,SAAU,CADZ,8BAGI,qBAAsB","file":"main.f770c081.chunk.css","sourcesContent":[".profile {\n  width: 200;\n  &:hover {\n    background-color: aqua;\n  }\n}\n"]}
